@@ -3,6 +3,6 @@ terraform {
     bucket = "kaizen-adileta"
     key    = "statefile/virginia/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "hello-table"
+    use_lockfile = true
   }
 }
