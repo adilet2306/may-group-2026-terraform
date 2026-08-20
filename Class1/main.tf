@@ -3,12 +3,12 @@ resource "aws_iam_user" "lb3" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "deployer-key"
+  key_name   = "deployer-key1"
   public_key = file("~/.ssh/id_rsa.pub")
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "kaizen-adileta"
+  bucket = "kaizen-adiletaa"
 }
 
 resource "aws_s3_object" "object" {
